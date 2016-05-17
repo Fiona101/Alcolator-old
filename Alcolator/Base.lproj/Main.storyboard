@@ -25,8 +25,15 @@
                                     <color key="titleColor" red="1" green="0.39270631511781229" blue="0.063669472749413258" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
                             </button>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="% Alcohol Content Per Beer" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="aJQ-HP-59K">
-                                <rect key="frame" x="0.0" y="21" width="580" height="30"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="???" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="O9b-9c-ced">
+                                <rect key="frame" x="230" y="259" width="46" height="30"/>
+                                <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="20"/>
+                                <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="bezel" placeholder="% Alcohol Content Per Beer" textAlignment="center" minimumFontSize="20" translatesAutoresizingMaskIntoConstraints="NO" id="aJQ-HP-59K">
+                                <rect key="frame" x="10" y="21" width="580" height="30"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <color key="textColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" name="ArialRoundedMTBold" family="Arial Rounded MT Bold" pointSize="30"/>
                                 <textInputTraits key="textInputTraits"/>
@@ -36,12 +43,6 @@
                                 <color key="minimumTrackTintColor" red="0.60000002384185791" green="0.40000000596046448" blue="0.20000000298023224" alpha="1" colorSpace="calibratedRGB"/>
                                 <color key="maximumTrackTintColor" red="1" green="0.5" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                             </slider>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="???" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="O9b-9c-ced">
-                                <rect key="frame" x="219" y="213" width="70" height="34"/>
-                                <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="20"/>
-                                <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <gestureRecognizers/>
@@ -50,7 +51,9 @@
                             <constraint firstItem="O9b-9c-ced" firstAttribute="width" secondItem="wM2-KQ-dvs" secondAttribute="width" id="2DM-Gf-YyJ"/>
                             <constraint firstItem="wM2-KQ-dvs" firstAttribute="centerX" secondItem="Upo-1P-egw" secondAttribute="centerX" id="6Xa-5E-Nfe"/>
                             <constraint firstItem="Upo-1P-egw" firstAttribute="centerX" secondItem="aJQ-HP-59K" secondAttribute="centerX" id="C0e-Tl-ehS"/>
+                            <constraint firstItem="O9b-9c-ced" firstAttribute="width" secondItem="wM2-KQ-dvs" secondAttribute="width" id="CBo-vk-t9J"/>
                             <constraint firstItem="O9b-9c-ced" firstAttribute="top" secondItem="wM2-KQ-dvs" secondAttribute="bottom" constant="30" id="Cco-nt-ont"/>
+                            <constraint firstItem="O9b-9c-ced" firstAttribute="top" secondItem="wM2-KQ-dvs" secondAttribute="bottom" constant="48" id="F37-up-pW9"/>
                             <constraint firstAttribute="trailingMargin" secondItem="O9b-9c-ced" secondAttribute="trailing" constant="15" id="Fmw-sZ-fnn"/>
                             <constraint firstItem="wM2-KQ-dvs" firstAttribute="top" secondItem="Upo-1P-egw" secondAttribute="bottom" constant="38" id="GZQ-3T-GgX"/>
                             <constraint firstItem="Upo-1P-egw" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" id="LDF-d8-aMa"/>
@@ -72,7 +75,6 @@
                             <constraint firstItem="aJQ-HP-59K" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="10" id="rQ5-Gf-TAs"/>
                             <constraint firstItem="Upo-1P-egw" firstAttribute="top" secondItem="aJQ-HP-59K" secondAttribute="bottom" constant="34" id="rca-7d-dnv"/>
                             <constraint firstItem="wM2-KQ-dvs" firstAttribute="top" secondItem="Upo-1P-egw" secondAttribute="bottom" constant="36" id="v1U-BU-AnE"/>
-                            <constraint firstItem="O9b-9c-ced" firstAttribute="top" secondItem="wM2-KQ-dvs" secondAttribute="bottom" constant="30" id="vhQ-2U-Z1K"/>
                             <constraint firstItem="aJQ-HP-59K" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="8" id="w3o-oJ-gl6"/>
                             <constraint firstItem="wM2-KQ-dvs" firstAttribute="top" secondItem="O9b-9c-ced" secondAttribute="bottom" constant="29" id="xUu-OX-azo"/>
                         </constraints>
@@ -91,6 +93,7 @@
                                 <exclude reference="iMt-FE-jNM"/>
                                 <exclude reference="v1U-BU-AnE"/>
                                 <exclude reference="xUu-OX-azo"/>
+                                <exclude reference="CBo-vk-t9J"/>
                                 <exclude reference="Cco-nt-ont"/>
                                 <exclude reference="Sfg-CW-AcK"/>
                                 <exclude reference="YRv-BB-NpD"/>
